@@ -143,3 +143,17 @@ function hideLoadingSpinner() {
         spinner.remove();
     }
 }
+
+function addComment() {
+    const commentText = commentInput.value.trim();
+    if (commentText) {
+        const commentDisplay = document.createElement("p");
+        commentDisplay.textContent = `Comment: ${commentText}`;
+        commentDisplay.classList.add("commentDisplay");
+
+        weatherattributes.appendChild(commentDisplay);
+
+        // Clear the comment input field after adding the comment
+        commentInput.value = "";
+    }
+}   

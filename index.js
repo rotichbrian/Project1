@@ -66,7 +66,12 @@ function displayWeatherInfo(data) {
         descDisplay.classList.add("descDisplay");
     })
 
-    const temperatureDisplay = document.createElement("p");
+        const temperatureDisplay = document.createElement("p");
             temperatureDisplay.textContent = ` ${(temp - 273.15).toFixed(1)} °C`;
             temperatureDisplay.classList.add("temperatureDisplay");
+
+         const humidityDisplay = document.createElement("p");
+            humidityDisplay.textContent = `Humidity: ${humidity}%`;
+            humidityDisplay.classList.add("humidityDisplay");
+
 }

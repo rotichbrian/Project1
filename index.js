@@ -79,4 +79,10 @@ function displayWeatherInfo(data) {
             weatherEmoji.classList.add("weatherEmoji");
              
 
+            weatherattributes.appendChild(cityDisplay);
+            weatherattributes.appendChild(temperatureDisplay);
+            weatherattributes.appendChild(humidityDisplay);
+            weatherattributes.appendChild(descDisplay);
+            weatherattributes.appendChild(weatherEmoji);
+
 }

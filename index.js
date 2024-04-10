@@ -86,3 +86,30 @@ function displayWeatherInfo(data) {
             weatherattributes.appendChild(weatherEmoji);
 
 }
+
+
+function getWeatherEmoji(weatherId){
+  
+    let weatherEmoji;
+
+    if (weatherId >= 200 && weatherId < 300) {
+        weatherEmoji = "⛈️";
+    } else if (weatherId >= 300 && weatherId < 500) {
+        weatherEmoji = "🌦️";
+    } else if (weatherId >= 500 && weatherId < 600) {
+        weatherEmoji = "🌧️";
+    } else if (weatherId >= 600 && weatherId < 700) {
+        weatherEmoji = "❄️";
+    } else if (weatherId >= 700 && weatherId < 800) {
+        weatherEmoji = "🌫️";
+    } else if (weatherId === 800) {
+        weatherEmoji = "🌞";
+    } else if (weatherId > 800 && weatherId < 810) {
+        weatherEmoji = "⛅";
+    } else {
+        weatherEmoji = "❓"; //emoji for unknown weather ID
+    }
+    
+    return weatherEmoji;
+    
+}

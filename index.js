@@ -49,3 +49,14 @@ function displayError(message){
         
         errorDisplay.classList.add("errorDisplay");
 }
+
+function displayWeatherInfo(data) {
+    const { name: cityName, main: { temp, humidity }, weather } = data;
+
+    weatherattributes.textContent = ""; // Clear existing content
+    weatherattributes.style.display = "flex";
+
+    const cityDisplay = document.createElement("h1");
+    cityDisplay.textContent = `${cityName}`;
+    cityDisplay.classList.add("cityDisplay");
+}

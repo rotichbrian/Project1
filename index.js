@@ -113,3 +113,14 @@ function getWeatherEmoji(weatherId){
     return weatherEmoji;
     
 }
+
+function displayError(message){
+ 
+    const errorDisplay = document.createElement("p")
+    errorDisplay.textContent = message;
+    errorDisplay.classList.add("errorDisplay")
+
+    weatherattributes.textContent = "";
+    weatherattributes.style.display = "flex";
+    weatherattributes.appendChild(errorDisplay);
+}

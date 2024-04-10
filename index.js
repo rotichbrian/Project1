@@ -124,3 +124,22 @@ function displayError(message){
     weatherattributes.style.display = "flex";
     weatherattributes.appendChild(errorDisplay);
 }
+
+function showLoadingSpinner() {
+    const spinner = document.createElement("div");
+    spinner.classList.add("spinner");
+    spinner.textContent = "Loading..."; // Optionally add text inside the spinner
+    weatherattributes.appendChild(spinner);
+
+    // Hide spinner after 10 seconds
+    setTimeout(() => {
+        hideLoadingSpinner();
+    }, 15000); // 10 seconds in milliseconds
+}
+
+function hideLoadingSpinner() {
+    const spinner = document.querySelector(".spinner");
+    if (spinner) {
+        spinner.remove();
+    }
+}

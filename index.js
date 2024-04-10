@@ -36,3 +36,9 @@ async function getweatherData(city){
     }
     return await response.json();
 }
+
+function displayError(message){
+    const errorDisplay = document.createElement("p");
+    errorDisplay.textContent = message;
+    errorDisplay.classList.add("errorDisplay");
+}

@@ -74,4 +74,9 @@ function displayWeatherInfo(data) {
             humidityDisplay.textContent = `Humidity: ${humidity}%`;
             humidityDisplay.classList.add("humidityDisplay");
 
+            const weatherEmoji = document.createElement("p");
+            weatherEmoji.textContent = getWeatherEmoji(id);
+            weatherEmoji.classList.add("weatherEmoji");
+             
+
 }

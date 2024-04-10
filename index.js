@@ -59,4 +59,10 @@ function displayWeatherInfo(data) {
     const cityDisplay = document.createElement("h1");
     cityDisplay.textContent = `${cityName}`;
     cityDisplay.classList.add("cityDisplay");
+
+    weather.forEach(({ description, id }) => {
+        const descDisplay = document.createElement("p");
+        descDisplay.textContent = `Description: ${description}`;
+        descDisplay.classList.add("descDisplay");
+    })
 }

@@ -15,5 +15,14 @@ weatherForm.addEventListener("submit", async event => {
               const weatherData = await getweatherData(city);
               
               displayWeatherInfo(weatherData)
-         }  
+         } 
+         catch(error){
+            console.error(error)
+            hideLoadingSpinner();
+            displayError(error)
+         }   
+
+         
+         
+    } 
 })

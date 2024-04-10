@@ -20,9 +20,10 @@ weatherForm.addEventListener("submit", async event => {
             console.error(error)
             hideLoadingSpinner();
             displayError(error)
-         }   
-
-         
-         
+         }
     } 
+    else{
+        displayError("please enter a city")
+    }    
+     
 })

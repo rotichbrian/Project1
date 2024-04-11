@@ -146,10 +146,10 @@ function showLoadingSpinner() {
     spinner.textContent = "Loading..."; 
     weatherattributes.appendChild(spinner);
 
-    // Hide spinner after 10 seconds
+    
     setTimeout(() => {
         hideLoadingSpinner();
-    }, 15000); // 10 seconds in milliseconds
+    }, 3000); 
 }
 
 function hideLoadingSpinner() {
@@ -171,4 +171,5 @@ function addComment() {
         commentInput.value = "";
     }
 }
- 
+
+  

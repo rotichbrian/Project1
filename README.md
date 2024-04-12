@@ -20,7 +20,7 @@ To run the Weather App locally, follow these steps:
 
 3. Enter the name of a city in the input field and click "Get Weather" to fetch weather data.
 
-4. The weather information will be displayed, including temperature, humidity, and a brief description of the weather conditions.
+4. The weather information will be displayed, including temperature, humidity, a brief description of the weather conditions and the emoji based on the weather.
 
 5. You can also add comments related to the weather by entering text in the comment input field and clicking "Add Comment".
 
